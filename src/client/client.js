@@ -1,3 +1,6 @@
 // Starting point for the client app
+import React    from 'react';
+import ReactDOM from 'react-dom';
+import Home     from './components/Home';
 
-console.log('Hi there!');
+ReactDOM.hydrate(<Home/>, document.querySelector('#root'));
