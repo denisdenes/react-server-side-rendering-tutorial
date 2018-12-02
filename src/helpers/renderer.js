@@ -5,7 +5,7 @@ import Home               from '../client/components/Home';
 export default () => {
   const content = renderToString(<Home/>);
 
-  const html = `
+  return `
     <html>
       <head></head>
       <body>
