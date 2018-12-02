@@ -11,7 +11,9 @@ import { renderRoutes }                 from "react-router-config";
 import Routes                           from './Routes';
 import reducers                         from './reducers';
 
-const store = createStore(reducers, {},
+const store = createStore(
+  reducers,
+  window.INITIAL_STATE,
   composeWithDevTools(applyMiddleware(thunk))
 );
 
